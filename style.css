@@ -17,7 +17,7 @@
 .logo{
 	padding: 20px 0 0 0;
 	margin: 0 0 0 20px;
-	width: 7%;
+	width: 7em;
 }
 
 main{
@@ -44,6 +44,40 @@ main{
 	outline: none;
 }
 
+.informacion{
+	color: #465057;
+	font-size: 15px;
+}
+
+.botones{
+	display: flex;
+	margin: 18px 30px 0 0;
+	justify-content: space-between;
+}
+
+.btn-encriptar{
+	background-color: var(--primario);
+	border: 1px solid var(--primario);
+	border-radius: 18px;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	height: 60px;
+	width: 240px;
+	margin: 0 0 0 0;
+}
+
+.btn-desencriptar{
+	background: #D8DFE8;
+	border: 1px solid var(--primario);
+	border-radius: 18px;
+	color: var(--primario);
+	font-size: 20px;
+	cursor: pointer;
+	height: 60px;
+	width: 240px;
+}
+
 .mensaje{
 	background: white;
 	background-image: url("img/muneco.png");
@@ -58,60 +92,29 @@ main{
 	padding: 2%;
 	position: fixed;
 	resize: none;
+	box-shadow: 0 24px 30px -8px var(--secundario);
 }
 
 .mensaje:focus{
 	outline: none;
 }
 
-.informacion{
-	color: #465057;
-	font-size: 15px;
-}
-
-.botones{
-	display: flex;
-	margin: 18px 0 0 0;
-}
-
-.btn-encriptar{
-	background-color: var(--primario);
-	border: 1px solid var(--primario);
-	border-radius: 18px;
-	color: white;
-	font-size: 20px;
-	cursor: pointer;
-	height: 60px;
-	width: 300px;
-	margin: 0 20px 0 0;
-}
-
-.btn-desencriptar{
-	background: #D8DFE8;
-	border: 1px solid var(--primario);
-	border-radius: 18px;
-	color: var(--primario);
-	font-size: 20px;
-	cursor: pointer;
-	height: 60px;
-	width: 300px;
-}
 
 .informacion-msg1{
-	background: var(--blanco);
+	background: none;
 	width: 280px;
 	height: 58px;
 	color: #343A40;
 	font-weight: 700;
 	font-size: 24px;
-	line-height: 120%;
+	line-height: 100%;
 	text-align: center;
-	margin: 360px 0 0 74px;
+	margin: 17em 0 0 2.6em;
 	position: fixed;	
 }
 
 .informacion-msg2{
-	background: var(--blanco);
+	background: none;
 	width: 280px;
 	height: 58px;
 	color: #343A40;
@@ -119,7 +122,7 @@ main{
 	font-size: 16px;
 	line-height: 120%;
 	text-align: center;
-	margin: 420px 0 0 74px;
+	margin: 29em 0 0 3.8em;
 	position: fixed;
 }
 
@@ -129,9 +132,102 @@ main{
 	color: var(--primario);
 	font-size: 20px;
 	cursor: pointer;
+	width: 230px;
 	height: 60px;
-	width: 280px;
-	margin: 590px 0 0 80px;
+	margin: 29.5em 0 0 4.2em;
 	position: fixed;
+	display: none;
 }
+
+@media screen and (max-width:768px){
+	*{
+		line-height: 70%;
+	}
+	
+	main{
+		display: block;
+		margin: 0 0 50px 30px;
+	}
+
+	.texto-entrada{
+		margin: 0 0 30px 0;
+	}
+
+	.botones{
+		justify-content: space-around;
+	}
+
+	.texto-salida{
+
+	}
+
+	.mensaje{
+		background-image: none;
+		width: -webkit-fill-available;
+		margin: 0 55px 0 0;
+		position: absolute;
+	}
+
+	.informacion-msg1{
+		width: 22em;
+		margin: 8em 0 0 3em;
+	}
+
+	.informacion-msg2{
+		width: 34em;
+		margin: 14.6em 0 0 4.2em;
+	}
+
+	.copiar{
+		margin: 13.5em 0 0 11.2em;
+	}
+}
+
+/*en bootstrap una 576px*/
+@media screen and (max-width:375px){
+	*{
+		font-size: 18px;
+	}
+
+	.logo{
+		padding: 0;
+		margin: 20px 0 0 0;
+	}
+
+	main{
+		margin: 0 0 0 15px;
+	}
+
+	.text-area{
+		padding: 4%;
+    	margin: 10px 0;
+	}
+
+	.botones{
+		margin: 18px 10px 0 0;
+	}
+
+	.mensaje{
+		font-size: 18px;
+		margin: 0 15px 0 0;
+		position: absolute;
+	}
+
+	.informacion-msg1{
+		width: 18em;
+    	margin: 6.5em 0 0 0.8em;
+    	font-size: 17px;
+	}
+
+	.informacion-msg2{
+		width: 21em;
+		margin: 9.3em 0 0 0.6em;
+		font-size: 15px;
+	}
+
+	.copiar{
+		margin: 9.5em 0 0 2.5em;
+	}
+}
+
 

@@ -2,6 +2,7 @@ const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
 const infomsg1 = document.querySelector(".informacion-msg1");
 const infomsg2 = document.querySelector(".informacion-msg2");
+const btncopiar = document.querySelector(".copiar");
 
 // Muestra resultados encriptación
 function btnEncriptar(){
@@ -11,6 +12,7 @@ function btnEncriptar(){
 	mensaje.style.backgroundImage = "none";
 	infomsg1.style.visibility = "hidden";
 	infomsg2.style.visibility = "hidden";
+	btncopiar.style.display = "block";
 }
 
 // Función encriptar
