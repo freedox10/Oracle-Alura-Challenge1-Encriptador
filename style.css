@@ -139,6 +139,15 @@ main{
 	display: none;
 }
 
+.copyright{
+	display: block;
+	font-size: 0.5em;
+    width: 10em;
+    margin: 42em 0 0 8em;
+    position: fixed;
+    background: none;
+}
+
 @media screen and (max-width:768px){
 	*{
 		line-height: 70%;
@@ -181,6 +190,12 @@ main{
 	.copiar{
 		margin: 13.5em 0 0 11.2em;
 	}
+
+	.copyright{
+		font-size: 0.7em;
+	    margin: 17em 0 0 10em;
+	}
+
 }
 
 /*en bootstrap una 576px*/
@@ -228,6 +243,12 @@ main{
 	.copiar{
 		margin: 9.5em 0 0 2.5em;
 	}
+
+	.copyright{
+		font-size: 0.7em;
+	    margin: 22em 0 0 8em;
+	}
+
 }
 
 
